@@ -1,0 +1,103 @@
+<h2>SRv6 SDN 逻辑架构图 - 版式草案</h2>
+<p class="subtitle">这是 draw.io 主图的模块摆放建议，帮你确认整体布局</p>
+
+<div class="mockup">
+  <div class="mockup-header">推荐版式：四层 + 右侧观测域</div>
+  <div class="mockup-body" style="background: #f8f9fa; padding: 20px;">
+
+    <!-- 第一层：业务接入层 -->
+    <div style="background: #e3f2fd; border: 2px solid #1976d2; padding: 15px; margin-bottom: 15px; border-radius: 4px;">
+      <div style="font-weight: bold; margin-bottom: 10px; color: #1565c0;">业务接入层</div>
+      <div style="display: flex; gap: 10px; justify-content: space-around;">
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 12px;">Portal / Web UI</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 12px;">Northbound API Gateway</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 12px;">Automation / CI</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 12px;">Tenant Request</div>
+      </div>
+    </div>
+
+    <!-- 箭头提示 -->
+    <div style="text-align: center; color: #1976d2; margin: 10px 0;">↓ REST / gRPC ↓</div>
+
+    <!-- 第二层：控制与编排层 -->
+    <div style="background: #fff3e0; border: 2px solid #f57c00; padding: 15px; margin-bottom: 15px; border-radius: 4px;">
+      <div style="font-weight: bold; margin-bottom: 10px; color: #e65100;">控制与编排层</div>
+      <div style="display: flex; gap: 8px; margin-bottom: 8px;">
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">Intent / Policy Manager</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">Topology & State DB</div>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">Path Computation Engine</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">SRv6 Service Orchestrator</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">Southbound Adapter</div>
+      </div>
+    </div>
+
+    <!-- 箭头提示 -->
+    <div style="text-align: center; color: #f57c00; margin: 10px 0;">↓ NETCONF / gNMI / PCEP ↓</div>
+
+    <!-- 第三层：数据平面 -->
+    <div style="background: #e8f5e9; border: 2px solid #388e3c; padding: 15px; margin-bottom: 15px; border-radius: 4px;">
+      <div style="font-weight: bold; margin-bottom: 10px; color: #2e7d32;">数据平面</div>
+      <div style="display: flex; gap: 8px; margin-bottom: 8px;">
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">SRv6 Ingress Node</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">SRv6 Transit Node</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">SRv6 Egress Node</div>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <div class="placeholder" style="flex: 2; padding: 10px; font-size: 11px;">PE / vRouter / Linux Router</div>
+        <div class="placeholder" style="flex: 1; padding: 10px; font-size: 11px;">Service Function</div>
+      </div>
+    </div>
+
+    <!-- 右侧观测域（用绝对定位模拟） -->
+    <div style="position: absolute; right: 20px; top: 120px; width: 200px; background: #fce4ec; border: 2px solid #c2185b; padding: 15px; border-radius: 4px;">
+      <div style="font-weight: bold; margin-bottom: 10px; color: #880e4f; font-size: 13px;">观测与运维层</div>
+      <div class="placeholder" style="padding: 8px; font-size: 10px; margin-bottom: 6px;">Telemetry Collector</div>
+      <div class="placeholder" style="padding: 8px; font-size: 10px; margin-bottom: 6px;">Metrics / Logs Store</div>
+      <div class="placeholder" style="padding: 8px; font-size: 10px; margin-bottom: 6px;">Fault / Alert Manager</div>
+      <div class="placeholder" style="padding: 8px; font-size: 10px; margin-bottom: 6px;">Visualization Dashboard</div>
+      <div class="placeholder" style="padding: 8px; font-size: 10px;">OAM / Trace / Ping</div>
+
+      <!-- 反馈箭头提示 -->
+      <div style="margin-top: 10px; font-size: 10px; color: #c2185b;">
+        ← 采集<br>
+        → 反馈到控制层
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+  <h3>版式说明</h3>
+  <ul style="line-height: 1.8;">
+    <li><strong>主流程</strong>：从上到下，业务接入 → 控制编排 → 数据平面</li>
+    <li><strong>观测域</strong>：放在右侧独立区域，避免和主控制链路交叉过多</li>
+    <li><strong>箭头组织</strong>：
+      <ul>
+        <li>蓝色实线：控制下发</li>
+        <li>橙色虚线：状态反馈</li>
+        <li>绿色粗线：业务流量（数据平面内部）</li>
+      </ul>
+    </li>
+    <li><strong>分组框</strong>：每一层用不同颜色的容器框包裹，便于区分职责</li>
+    <li><strong>接口标注</strong>：在箭头旁边标注协议名称（REST / gNMI / PCEP 等）</li>
+  </ul>
+</div>
+
+<div class="section" style="margin-top: 20px;">
+  <h3>draw.io 实施建议</h3>
+  <ul style="line-height: 1.8;">
+    <li>使用 <strong>Container</strong> 形状作为每一层的外框</li>
+    <li>模块用 <strong>Rectangle</strong>，圆角 4-6px</li>
+    <li>箭头用 <strong>Connector</strong>，设置不同样式和颜色</li>
+    <li>协议标注用 <strong>Label</strong> 直接贴在箭头上</li>
+    <li>建议画布尺寸：A3 横向（420mm × 297mm）或更大</li>
+    <li>导出时选择 <strong>PNG 高分辨率</strong> 或 <strong>SVG</strong> 格式</li>
+  </ul>
+</div>
+
+<p style="margin-top: 30px; color: #666;">
+  这个版式草案看起来合理吗？如果没问题，我就继续整理完整设计文档。
+</p>

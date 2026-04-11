@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2025-01-01T00:00:00.000Z" agent="Mozilla" etag="abc123" version="20.7.4" type="device">
+  <diagram id="SDN_SRv6_Topo" name="Page-1">
+    <mxGraphModel dx="1600" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- 新加坡 - 华为AE8000 -->
+        <mxCell id="SG" value="新加坡&lt;br&gt;AE8000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="250" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 香港 - 华为AE8000 -->
+        <mxCell id="HK" value="香港&lt;br&gt;AE8000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 日本 - 华为AE8000 -->
+        <mxCell id="JP" value="日本&lt;br&gt;AE8000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="250" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- SDN 控制器 -->
+        <mxCell id="SDN" value="SDN 控制器" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;aspect=fixed;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 链路：新加坡 ↔ 香港 SRv6 -->
+        <mxCell id="link1" value="SRv6" style="endArrow=block;html=1;strokeColor=#0066cc;strokeWidth=2;edgeStyle=none;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="SG" target="HK">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 链路：香港 ↔ 日本 SRv6 -->
+        <mxCell id="link2" value="SRv6" style="endArrow=block;html=1;strokeColor=#0066cc;strokeWidth=2;edgeStyle=none;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="HK" target="JP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 链路：新加坡 ↔ 日本 SRv6 -->
+        <mxCell id="link3" value="SRv6" style="endArrow=block;html=1;strokeColor=#0066cc;strokeWidth=2;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="SG" target="JP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- SDN 控制器管理三台设备 -->
+        <mxCell id="ctrl1" style="dashed=1;html=1;strokeColor=#cc0000;strokeWidth=1;entryX=0.5;entryY=0;entryPerimeter=1;" edge="1" parent="1" source="SDN" target="SG">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ctrl2" style="dashed=1;html=1;strokeColor=#cc0000;strokeWidth=1;entryX=0.5;entryY=0;entryPerimeter=1;" edge="1" parent="1" source="SDN" target="HK">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ctrl3" style="dashed=1;html=1;strokeColor=#cc0000;strokeWidth=1;entryX=0.5;entryY=0;entryPerimeter=1;" edge="1" parent="1" source="SDN" target="JP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
