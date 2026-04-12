@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.3.1" pages="6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" pages="6">
   <diagram id="SDN_SRv6_Topo" name="infra">
     <mxGraphModel dx="3185" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -142,7 +142,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2zWZ5FXzllvYOep-4MYn" name="Overlayer-mgmt">
-    <mxGraphModel dx="2946" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2934" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -181,11 +181,11 @@
         <mxCell id="EmU-Fpwyu-hJhsXHt8dj-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ge1/0/1" vertex="1">
           <mxGeometry height="30" width="120" x="640" y="418" as="geometry" />
         </mxCell>
-        <mxCell id="EmU-Fpwyu-hJhsXHt8dj-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;verticalAlign=top;" value="HK&lt;br&gt;AE8000" vertex="1">
+        <mxCell id="EmU-Fpwyu-hJhsXHt8dj-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;verticalAlign=top;dashed=1;" value="HK&lt;br&gt;AE8000" vertex="1">
           <mxGeometry height="290" width="140" x="960" y="363" as="geometry" />
         </mxCell>
-        <mxCell id="EmU-Fpwyu-hJhsXHt8dj-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ge1/0/1" vertex="1">
-          <mxGeometry height="30" width="120" x="900" y="418" as="geometry" />
+        <mxCell id="EmU-Fpwyu-hJhsXHt8dj-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="ge1/0/1" vertex="1">
+          <mxGeometry height="30" width="120" x="910" y="418" as="geometry" />
         </mxCell>
         <mxCell id="EmU-Fpwyu-hJhsXHt8dj-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mgmt" vertex="1">
           <mxGeometry height="45" width="120" x="490" y="585" as="geometry" />
@@ -215,7 +215,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="dZIRtwLVFJCvB5AeSXv8" name="Overlay-tenant">
-    <mxGraphModel dx="2119" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2107" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -294,7 +294,7 @@
         <mxCell id="bCZK8MpQubO6yDtKn-Jx-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ge1/0/3" vertex="1">
           <mxGeometry height="100" width="120" x="1560" y="1300" as="geometry" />
         </mxCell>
-        <mxCell id="bCZK8MpQubO6yDtKn-Jx-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="bCZK8MpQubO6yDtKn-Jx-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="internet" vertex="1">
           <mxGeometry height="80" width="120" x="1860" y="1325" as="geometry" />
         </mxCell>
         <mxCell id="bCZK8MpQubO6yDtKn-Jx-12" edge="1" parent="1" source="bCZK8MpQubO6yDtKn-Jx-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4t8ZEkiMoT-qrhyjNo_o-15">
@@ -310,7 +310,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="YN9YxMxAhK0OTrzVbNXK" name="Overlay-servicechain">
-    <mxGraphModel dx="2946" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2445" dy="948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -336,7 +336,7 @@
           <mxGeometry height="67" width="120" x="580" y="808" as="geometry" />
         </mxCell>
         <mxCell id="fwXvdOrMRlYoF3tEUy4h-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;" value="Cloud&lt;div&gt;Service&lt;/div&gt;" vertex="1">
-          <mxGeometry height="106.5" width="140" x="300" y="800" as="geometry" />
+          <mxGeometry height="106.5" width="140" x="280" y="795" as="geometry" />
         </mxCell>
         <mxCell id="fwXvdOrMRlYoF3tEUy4h-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ge1/0/1" vertex="1">
           <mxGeometry height="30" width="120" x="730" y="708" as="geometry" />
