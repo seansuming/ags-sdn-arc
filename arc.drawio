@@ -254,7 +254,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="dZIRtwLVFJCvB5AeSXv8" name="Overlay-tenant">
-    <mxGraphModel dx="2107" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2934" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -310,7 +310,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bCZK8MpQubO6yDtKn-Jx-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tenant-A" vertex="1">
-          <mxGeometry height="60" width="120" x="950" y="996" as="geometry" />
+          <mxGeometry height="60" width="120" x="740" y="996" as="geometry" />
         </mxCell>
         <mxCell id="bCZK8MpQubO6yDtKn-Jx-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Vlan100" vertex="1">
           <mxGeometry height="30" width="120" x="1370" y="1018" as="geometry" />
