@@ -264,7 +264,7 @@
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;verticalAlign=top;" value="SG&lt;br&gt;AE8000" vertex="1">
           <mxGeometry height="630" width="330" x="1900" y="1520" as="geometry" />
         </mxCell>
-        <mxCell id="4t8ZEkiMoT-qrhyjNo_o-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" value="ge0/0/1&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;trunck&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;QinQ&amp;nbsp; &amp;nbsp;vlan100：vlan1000&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;vlan200：vlan1000&lt;/div&gt;" vertex="1">
+        <mxCell id="4t8ZEkiMoT-qrhyjNo_o-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" value="ge0/0/1&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;trunck&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;QinQ&amp;nbsp; &amp;nbsp;vlan1000：vlan100&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;vlan1000：vlan200&lt;/div&gt;" vertex="1">
           <mxGeometry height="180" width="200" x="1800" y="1590" as="geometry" />
         </mxCell>
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" value="ge0/02" vertex="1">
