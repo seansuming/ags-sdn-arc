@@ -295,7 +295,7 @@
           <mxGeometry height="630" width="330" x="1900" y="1520" as="geometry" />
         </mxCell>
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" value="ge0/0/1&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;trunck&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;QinQ&amp;nbsp; &amp;nbsp;vlan1000：vlan100&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;vlan1000：vlan200&lt;/div&gt;" vertex="1">
-          <mxGeometry height="180" width="200" x="1800" y="1600" as="geometry" />
+          <mxGeometry height="180" width="200" x="1790" y="1600.5" as="geometry" />
         </mxCell>
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" value="ge0/02" vertex="1">
           <mxGeometry height="67" width="120" x="1830" y="1900" as="geometry" />
@@ -369,9 +369,9 @@
         <mxCell id="_XB3d080j_7yl9JutGs2-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="Site-HK" vertex="1">
           <mxGeometry height="60" width="120" x="3220" y="1595" as="geometry" />
         </mxCell>
-        <mxCell id="zrZsann_GNUbJ7Jhty0A-2" edge="1" parent="1" source="zrZsann_GNUbJ7Jhty0A-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;" target="4t8ZEkiMoT-qrhyjNo_o-4">
+        <mxCell id="zrZsann_GNUbJ7Jhty0A-2" edge="1" parent="1" source="zrZsann_GNUbJ7Jhty0A-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1760" y="1679" as="targetPoint" />
+            <mxPoint x="1570" y="1690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="zrZsann_GNUbJ7Jhty0A-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" value="Tenant SW" vertex="1">
@@ -391,6 +391,12 @@
         </mxCell>
         <mxCell id="zrZsann_GNUbJ7Jhty0A-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;div&gt;Tenant-A-VRF&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="180" width="110" x="2013" y="1640" as="geometry" />
+        </mxCell>
+        <mxCell id="OPxXa0z8UvZFhEN5tgiF-2" edge="1" parent="1" source="OPxXa0z8UvZFhEN5tgiF-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4t8ZEkiMoT-qrhyjNo_o-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OPxXa0z8UvZFhEN5tgiF-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=16;" value="HW SWITCH&lt;div&gt;S6730-S48X6Q&lt;/div&gt;" vertex="1">
+          <mxGeometry height="106.5" width="140" x="1570" y="1637.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
