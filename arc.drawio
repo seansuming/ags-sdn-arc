@@ -208,7 +208,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2zWZ5FXzllvYOep-4MYn" name="Overlayer-mgmt">
-    <mxGraphModel dx="2568" dy="1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2934" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -280,11 +280,14 @@
         <mxCell id="In0zTqmiKVzasOvuXglP-1" edge="1" parent="1" source="MS868JxE0NyYa9D_dO7x-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.421;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="EmU-Fpwyu-hJhsXHt8dj-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="53NzPsWwe-F8m5x18hUr-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=14;verticalAlign=top;" value="HW&lt;div&gt;Switch&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="140" x="230" y="660" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="dZIRtwLVFJCvB5AeSXv8" name="Overlay-tenant">
-    <mxGraphModel dx="2333" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2107" dy="-32" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -297,7 +300,7 @@
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" value="ge0/0/1&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;trunck&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;QinQ&amp;nbsp; &amp;nbsp;vlan1000：vlan100&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;vlan1000：vlan200&lt;/div&gt;" vertex="1">
           <mxGeometry height="180" width="200" x="1790" y="1600.5" as="geometry" />
         </mxCell>
-        <mxCell id="4t8ZEkiMoT-qrhyjNo_o-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" value="ge0/02" vertex="1">
+        <mxCell id="4t8ZEkiMoT-qrhyjNo_o-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" value="ge0/02&lt;div&gt;vlan 1001&lt;/div&gt;" vertex="1">
           <mxGeometry height="67" width="120" x="1830" y="1900" as="geometry" />
         </mxCell>
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#3a7227;strokeWidth=2;fontSize=16;" value="Cloud&lt;div&gt;Service&lt;/div&gt;" vertex="1">
@@ -318,8 +321,8 @@
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-18" edge="1" parent="1" source="4t8ZEkiMoT-qrhyjNo_o-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" target="4t8ZEkiMoT-qrhyjNo_o-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4t8ZEkiMoT-qrhyjNo_o-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="eth1" vertex="1">
-          <mxGeometry height="80" width="120" x="2590" y="1789" as="geometry" />
+        <mxCell id="4t8ZEkiMoT-qrhyjNo_o-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="eth1&lt;div&gt;vlan 1000:100&lt;/div&gt;" vertex="1">
+          <mxGeometry height="61" width="120" x="2590" y="1800" as="geometry" />
         </mxCell>
         <mxCell id="4t8ZEkiMoT-qrhyjNo_o-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="ge1/0/2" vertex="1">
           <mxGeometry height="59" width="120" x="2160" y="1800" as="geometry" />
@@ -389,8 +392,8 @@
         <mxCell id="zrZsann_GNUbJ7Jhty0A-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" value="ge0/03" vertex="1">
           <mxGeometry height="67" width="120" x="1840" y="2060" as="geometry" />
         </mxCell>
-        <mxCell id="zrZsann_GNUbJ7Jhty0A-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;div&gt;Tenant-A-VRF&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="180" width="110" x="2013" y="1640" as="geometry" />
+        <mxCell id="zrZsann_GNUbJ7Jhty0A-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" value="&lt;div&gt;Tenant-A-VRF&lt;/div&gt;&lt;div&gt;&lt;div&gt;vlan 1000&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="110" x="2013" y="1640" as="geometry" />
         </mxCell>
         <mxCell id="OPxXa0z8UvZFhEN5tgiF-2" edge="1" parent="1" source="OPxXa0z8UvZFhEN5tgiF-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4t8ZEkiMoT-qrhyjNo_o-4" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -402,7 +405,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="YN9YxMxAhK0OTrzVbNXK" name="Overlay-servicechain">
-    <mxGraphModel dx="2568" dy="1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2934" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -435,9 +438,8 @@
         <mxCell id="Fv_LdV6UE9a9oRgwuPe_-2" edge="1" parent="1" source="fwXvdOrMRlYoF3tEUy4h-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Fv_LdV6UE9a9oRgwuPe_-1" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="880" y="723" />
-              <mxPoint x="880" y="620" />
-              <mxPoint x="1670" y="620" />
+              <mxPoint x="1010" y="723" />
+              <mxPoint x="1010" y="620" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -529,7 +531,7 @@
           <mxGeometry height="60" width="120" x="1200" y="940" as="geometry" />
         </mxCell>
         <mxCell id="Fv_LdV6UE9a9oRgwuPe_-1" parent="1" style="whiteSpace=wrap;html=1;rounded=1;dashed=1;" value="other site" vertex="1">
-          <mxGeometry height="60" width="120" x="1610" y="525" as="geometry" />
+          <mxGeometry height="60" width="120" x="1710" y="590" as="geometry" />
         </mxCell>
         <mxCell id="sRa3vHn4jUQBwlZfZQFB-2" edge="1" parent="1" source="sRa3vHn4jUQBwlZfZQFB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="fwXvdOrMRlYoF3tEUy4h-13">
           <mxGeometry relative="1" as="geometry">
